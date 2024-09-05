@@ -243,10 +243,11 @@ h6 {
 
 .header .topbar {
   background-color: var(--background-color);
-  height: 40px;
+  height: 50px;
   padding: 0;
   font-size: 14px;
   transition: all 0.5s;
+  margin-left: -10px;
 }
 
 .header .topbar .contact-info i {
@@ -262,9 +263,14 @@ h6 {
 
 @media (max-width: 575px) {
 
+  .header .topbar .contact-info {
+    flex-wrap: wrap; /* This will wrap content if it overflows */
+    justify-content: center; /* Center content on mobile */
+  }
+
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -278,11 +284,18 @@ h6 {
   text-decoration: underline;
 }
 
+.header .topbar .social-links {
+  display: flex !important; /* Make sure it's visible */
+  justify-content: center; /* Center the icons */
+  margin-top: 10px; /* Add space between contact info and social links */
+}
+
 .header .topbar .social-links a {
   color: color-mix(in srgb, var(--contrast-color), transparent 40%);
   line-height: 0;
   transition: 0.3s;
-  margin-left: 20px;
+  margin-left: 10px;
+  font-size: 14px;
 }
 
 .header .topbar .social-links a:hover {

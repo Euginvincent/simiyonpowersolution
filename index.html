@@ -23,6 +23,68 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .custom-img {
+      width: 100%; /* Ensures the image takes the full width of the parent container */
+      height: 200px; /* Fixed height for all images */
+      object-fit: cover; /* Ensures the image scales correctly to fill the height and width without distortion */
+    }
+  
+    .service-item {
+      padding: 15px; /* Adds padding inside the service item */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle box shadow */
+      border-radius: 8px; /* Optional: Rounds the corners of the service item */
+    }
+  
+    .alert-popup {
+        position: fixed;
+        top: 20px;
+        right: -300px;
+        min-width: 250px;
+        padding: 20px;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: right 0.3s ease;
+      }
+  
+      .alert-popup.show {
+        right: 20px; /* Show the popup by shifting it into view */
+      }
+  
+      .alert-popup.success {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+      }
+  
+      .alert-popup.error {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+      }
+  
+      .alert-popup h4 {
+        margin: 0 0 10px;
+      }
+  
+      .alert-popup p {
+        margin: 0;
+      }
+  
+      .alert-popup button {
+        background: none;
+        border: none;
+        float: right;
+        font-size: 1.2rem;
+      }
+  
+      .alert-popup button:hover {
+        cursor: pointer;
+      }
+  </style>
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
@@ -30,19 +92,6 @@
       })();
     </script>
 </head>
-<style>
-  .custom-img {
-    width: 100%; /* Ensures the image takes the full width of the parent container */
-    height: 200px; /* Fixed height for all images */
-    object-fit: cover; /* Ensures the image scales correctly to fill the height and width without distortion */
-  }
-
-  .service-item {
-    padding: 15px; /* Adds padding inside the service item */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle box shadow */
-    border-radius: 8px; /* Optional: Rounds the corners of the service item */
-  }
-</style>
 
 <body class="index-page">
   <header id="header" class="header sticky-top">
@@ -50,7 +99,7 @@
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:simiyonpowersolution@gmail.com">simiyonpowersolution@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>Call us now +91 89257 84461, 97511 02030</span></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>Call us now +91 8925784461, 9751102030</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="https://wa.me/+918925784461" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
@@ -290,11 +339,11 @@
             <div class="swiper-slide"><img src="assets/img/vendor/microtec.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/vendor/exide-7-1.jpg" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/vendor/luminous-2-1.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/vendor/livguard-1-1.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/vendor/okaya-1.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/vendor/ampslogo.jpg" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/vendor/Nile-Logo.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/vendor/kent.png" class="img-fluid" alt=""></div>
           </div>
           <!-- <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><img src="assets/img/vendor/lflogo.png" class="img-fluid" alt=""></div>
@@ -485,7 +534,7 @@
       <div class="container section-title"  data-aos="fade-up">
         <h2>Team</h2>
         <div style="text-align: left;">
-        <p>கம்பேர் கம்பெனிகளில், சிறந்த சோலார் பேனல் நிறுவல் மேற்கோள்களை நாங்கள் வழங்குகிறோம். 
+        <p>சிறந்த கம்பெனிகளின், சிறந்த சோலார் பேனல்கள் நிறுவல் மற்றும் சேவைகளை நாங்கள் வழங்குகிறோம். 
         <p>உங்கள் வீட்டில் நீங்கள் எதை நிறுவ விரும்புகிறீர்கள் என்பதை நாங்கள் அறிந்தவுடன், உங்கள் சார்பாக சோலார் பேனல் நிறுவிகளைத் தொடர்புகொண்டு நீங்கள் மிகவும் போட்டித்தன்மை இல்லா விலைகளைப் பெறுவதை உறுதிசெய்கிறோம்.</p> 
         <p>இது இலவசம், எந்த கடமையும் இல்லாத சேவையாகும், மேலும் உங்கள் சோலார் பேனல்களை நிறுவும் நபர்களை நீங்கள் சந்திப்பீர்கள்.</p>
         <p>உங்கள் மன அமைதிக்காக எல்லாம் திறந்த மற்றும் வெளிப்படையானது.</p>
@@ -554,78 +603,28 @@
           <div class="col-lg-7">
             <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-          
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
                   <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-          
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email-field" required>
                 </div>
-          
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required>
                 </div>
-          
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
                 </div>
-          
                 <div class="col-md-12 text-center">
-                  <div id="loading" style="display: none;">Loading...</div>
-                  <div id="error-message" style="display: none; color: red;">An error occurred. Please try again.</div>
-                  <div id="sent-message" style="display: none; color: green;">Your message has been sent. Thank you!</div>
-          
                   <button type="submit">Send Message</button>
                 </div>
-          
               </div>
             </form>
-          </div>
-          <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function() {
-              const form = document.getElementById('contact-form');
-              const loading = document.getElementById('loading');
-              const errorMessage = document.getElementById('error-message');
-              const sentMessage = document.getElementById('sent-message');
-          
-              form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent default form submission
-          
-                // Show loading message
-                loading.style.display = 'block';
-                errorMessage.style.display = 'none';
-                sentMessage.style.display = 'none';
-          
-                const serviceID = 'service_zjy7jei'; // Your service ID
-                const templateID = 'template_0ue0rn6'; // Your template ID
-          
-                // Prepare the template parameters
-                const templateParams = {
-                  from_name: document.getElementById('name-field').value,
-                  from_email: document.getElementById('email-field').value,
-                  subject: document.getElementById('subject-field').value,
-                  message: document.getElementById('message-field').value,
-                };
-          
-                emailjs.send(serviceID, templateID, templateParams)
-                  .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    loading.style.display = 'none';
-                    sentMessage.style.display = 'block';
-                    form.reset(); // Reset form fields
-                  }, function(error) {
-                    console.error('FAILED...', error);
-                    loading.style.display = 'none';
-                    errorMessage.style.display = 'block';
-                  });
-              });
-            });
-          </script>
+          </div>          
         </div>
       </div>
     </section>
@@ -661,7 +660,7 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Solor Power Plants</a></li>
+            <li><a href="#">UPS & Battery Sales & Service</a></li>
             <li><a href="#">Solar Water Pumps</a></li>
             <li><a href="#">Solar Street Lights</a></li>
             <li><a href="#">Solar Water Heater</a></li>
@@ -687,6 +686,61 @@
       </div>
     </div>
   </footer>
+
+  <div id="popup-alert" class="alert-popup">
+    <button onclick="closePopup()">×</button>
+    <h6 id="popup-title"></h6>
+    <p id="popup-message"></p>
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      const popupAlert = document.getElementById('popup-alert');
+      const popupTitle = document.getElementById('popup-title');
+      const popupMessage = document.getElementById('popup-message');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const serviceID = 'service_zjy7jei'; // Your service ID
+        const templateID = 'template_0ue0rn6'; // Your template ID
+
+        const templateParams = {
+          from_name: document.getElementById('name-field').value,
+          from_email: document.getElementById('email-field').value,
+          subject: document.getElementById('subject-field').value,
+          message: document.getElementById('message-field').value,
+        };
+
+        emailjs.send(serviceID, templateID, templateParams)
+          .then(function(response) {
+            showPopup('Success', 'Your message has been sent. Thank you!', 'success');
+            form.reset();
+          }, function(error) {
+            showPopup('Error', 'There was an issue sending an email to this contact.', 'error');
+            form.reset();
+          });
+      });
+
+      function showPopup(title, message, type) {
+        popupTitle.textContent = title;
+        popupMessage.textContent = message;
+        popupAlert.classList.remove('success', 'error');
+        popupAlert.classList.add(type);
+        popupAlert.classList.add('show');
+
+        setTimeout(function() {
+          closePopup();
+        }, 3000); // Auto-close after 5 seconds
+      }
+
+      function closePopup() {
+        popupAlert.classList.remove('show');
+      }
+    });
+  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
