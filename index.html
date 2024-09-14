@@ -83,6 +83,44 @@
       .alert-popup button:hover {
         cursor: pointer;
       }
+
+      .call-button {
+        position: fixed;
+        bottom: 50%;
+        right: 20px;
+        background-color: #28a745;
+        color: white;
+        width: 60px; /* Set a fixed width */
+        height: 60px; /* Set a fixed height */
+        border-radius: 50%; /* Make the button circular */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        }
+
+    .call-button i {
+      font-size: 24px; 
+    }
+
+    .call-button:hover {
+        background-color: #218838; /* Darker shade on hover */
+    }
+
+      .custom-img {
+        width: 100%; 
+        height: auto; 
+        object-fit: contain; 
+      }
+
+      /* @media (max-width: 360px) {
+        .custom-img {
+          width: 100%;
+          object-fit: contain;
+        }
+      } */
   </style>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -145,7 +183,7 @@
           </div>
         </div>
 
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
           <div class="carousel-container">
             <h2>At vero eos et accusamus</h2>
@@ -161,7 +199,7 @@
             <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
             <a href="#featured-services" class="btn-get-started">Get Started</a>
           </div>
-        </div>
+        </div> -->
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -181,19 +219,19 @@
         <div class="row gy-4">
           <div class="col-lg-2 col-md-4 col-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <img src="assets/img/Battery/exide-battery2.png" class="img-fluid custom-img" alt="">
+              <img src="assets/img/Battery/exide-battery2-1.png" class="img-fluid custom-img" alt="">
             </div>
           </div>
     
           <div class="col-lg-2 col-md-4 col-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <img src="assets/img/Battery/panel1.png" class="img-fluid custom-img" alt="">
+              <img src="assets/img/Battery/panel1-1.png" class="img-fluid custom-img" alt="">
             </div>
           </div>
     
           <div class="col-lg-2 col-md-4 col-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <img src="assets/img/Battery/panel2.jpg" class="img-fluid custom-img" alt="">
+              <img src="assets/img/Battery/panel2-1.jpg" class="img-fluid custom-img" alt="">
             </div>
           </div>
     
@@ -363,58 +401,55 @@
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div>
 
       <div class="container">
-
         <div class="row g-5">
-
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <h3><a href="service-details.html" class="read-more stretched-link">Nesciunt Mete</a></h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <h3><a>ONGRID - SOLAR POWER PLANT</a></h3>
+              <img src="assets/img/service/ongrid-2.jpg" class="img-fluid" alt="">
+              <p>On-grid solar power system is a solar power generation system where it is connected to the utility grid. The electricity produced by the system is routed to the grid from where it is used to run the various appliances. The installation of the same is also fuss-free and easy to maintain.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <h3><a href="service-details.html" class="read-more stretched-link">Eosle Commodi</a></h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <h3><a>OFFGRID - SOLAR POWER PLANT</a></h3>
+              <img src="assets/img/service/off-grid-1.webp" class="img-fluid" alt="">
+              <p>An off-grid solar system is a solar panel system that generates electricity, stores that power in solar batteries, and runs independently from the power grid. These systems encourage off-the-grid living, a lifestyle centered around energy independence and self-sustainability.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <h3><a href="service-details.html" class="read-more stretched-link">Ledo Markt</a></h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <h3><a>SOLAR PUMPING SYSTEM</a></h3>
+              <img src="assets/img/service/waterpump-2-1.jpg" class="img-fluid" alt="">
+              <p>A solar pumping system is a water pump that uses solar energy to power an electric motor, which then powers a water pump. Solar pumping systems are a cost-effective and environmentally friendly option because they don't rely on electricity, diesel, or gasoline. They also have low maintenance costs and long product lives.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <h3><a href="service-details.html" class="read-more stretched-link">Asperiores Commodi</a></h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <h3><a>SOLAR WATER HEATER</a></h3>
+              <img src="assets/img/service/solarwater-heater-1.jpg" class="img-fluid" alt="">
+              <p>Solar water heaters use solar energy to heat water in your homes. These results save on a great many things. SWH of 100-300 liters capacity is suited for domestic use. Larger systems can be used in restaurants, canteens, guest houses, hotels, hospitals, industrial needs etc. They have no dependency on fuels, are zero-emission, and have lower carbon footprints</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <h3><a href="service-details.html" class="read-more stretched-link">Velit Doloremque.</a></h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <h3><a>SOLAR STREET LIGHTS</a></h3>
+              <img src="assets/img/service/streetlight-2-1.jpg" class="img-fluid" alt="">
+              <p>The solar energy is absorbed in the daytime and is stored in the battery to power the light in the night. The light is set to be switched on once the input voltage from the solar energy falls below a threshold limit. The light is set to be switched off automatically, once the input voltage from the solar energy raises above a threshold limit.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <h3><a href="service-details.html" class="read-more stretched-link">Dolori Architecto</a></h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <h3><a>RO WATER PURIFIER</a></h3>
+              <img src="assets/img/service/maxresdefault.jpg" class="img-fluid" alt="">
+              <p>Reverse osmosis (RO) is a water purification technique that employs a semi-permeable membrane to eliminate impurities from water. This process is highly efficient in purifying drinking water, effectively eliminating dissolved salts, heavy metals, minerals, bacteria, viruses, and other harmful substances.</p>
             </div>
           </div>
         </div>
@@ -660,12 +695,13 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">UPS & Battery Sales & Service</a></li>
-            <li><a href="#">Solar Water Pumps</a></li>
-            <li><a href="#">Solar Street Lights</a></li>
-            <li><a href="#">Solar Water Heater</a></li>
-            <li><a href="#">RO Sales and Services</a></li>
-            <li><a href="#">RO Spares</a></li>
+            <li><a href="#services">UPS Sales and Service</a></li>
+            <li><a href="#services">Battery Sales and Service</a></li>
+            <li><a href="#services">Solar Water Pumps</a></li>
+            <li><a href="#services">Solar Street Lights</a></li>
+            <li><a href="#services">Solar Water Heater</a></li>
+            <li><a href="#services">RO Sales and Services</a></li>
+            <li><a href="#services">RO Spares</a></li>
           </ul>
         </div>
 
@@ -741,6 +777,10 @@
     });
   </script>
 
+<!-- call option -->
+<a href="tel:+918925784461" id="call-button" class="call-button">
+  <i class="bi bi-telephone"></i>
+</a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

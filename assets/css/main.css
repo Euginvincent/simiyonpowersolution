@@ -1189,7 +1189,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color: rgb(235, 103, 40);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 40px 30px;
@@ -1213,7 +1213,7 @@ section,
 }
 
 .services .service-item h3 a {
-  color: color-mix(in srgb, var(--heading-color), transparent 25%);
+  color: white;
   font-weight: 700;
   font-size: 22px;
   transition: 0.3s;
@@ -1221,7 +1221,7 @@ section,
 
 .services .service-item p {
   margin-bottom: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: white;
   transition: 0.3s;
 }
 
@@ -1260,11 +1260,11 @@ section,
 }
 
 .services .service-item:hover h3 a {
-  color: var(--heading-color);
+  color: white;
 }
 
 .services .service-item:hover p {
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  color: whitesmoke, transparent 10%;
 }
 
 /*--------------------------------------------------------------
